@@ -9,6 +9,8 @@ config = ConfigParser()
 syscheck()
 
 output_folder_path='output'
+os.makedirs(output_folder_path, exist_ok=True)
+    
 for file in os.listdir(output_folder_path):
     file_path = os.path.join(output_folder_path, file)
     if os.path.isfile(file_path):
