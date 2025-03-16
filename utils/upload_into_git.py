@@ -23,6 +23,6 @@ def gitCommiter(path):
 
     run_git_command("git add .")
     run_git_command(f'git commit -m "{commit_message}"')
-    run_git_command("git push origin main")
+    run_git_command("git push origin main --force")
 
     print("✅ Backup successfully pushed to GitHub!")
